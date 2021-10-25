@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <link rel="stylesheet" href="css/survey.css">
+  <header>
+      <h1 id="title" class="text-center">Concert Survey</h1>
+      <p id="description" class="description-text-center" >
+        Thank you for take the time to improve us!
+      </p>
+  </header>
+<div class="container">
+  <body>
+    <form id="survey-form">
+      <div class="survey-group">
+        <label id="name-label" for="name-label" class="text-label">
+          1. Name:
+        </label>
+        <input id="name" class="form-control" type="text" name="name" placeholder="Enter name" required="">
+      </div>
+      <div class="survey-group">
+        <label id="email-label" for="email-label" class="text-label">
+          2. E-mail:
+        </label>
+        <input id="email" class="form-control" type="email" name="name" placeholder="Enter your e-mail" required="">
+      </div>
+      <div class="survey-group">
+        <label id="number-label" for="number-label" class="text-label">
+          3. Age (optional):
+        </label>
+        <input id="number" class="form-control" type="number" name="number" max="100" min="10" placeholder="18" required="">
+      </div>
+      <div class="survey-group">
+        <label for="dropdown">
+          4. Select your favorite music genre:
+        </label>
+        <select id="dropdown" class="form-control" name="options" required="">
+            <option disabled= "" selected= "" value= "">Select an option</option>
+            <option value="blues">Blues</option>
+            <option value="classical">Classical</option>
+            <option value="electro">Electronic</option>
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="others">Others</option>
+          </select>
+      </div>
+      <div class="survey-group">
+        <p>5. Are you planning to attend any concerts this year?</p>
+        <label>
+          <input type="radio" name="concert-options" value="definitely">
+          Definitely
+        </label>
+        <label>
+          <input type="radio" name="concert-options" value="maybe">
+          Maybe
+        </label>
+        <label>
+          <input type="radio" name="concert-options" value="nosure">
+          Not sure
+        </label>
+        <label >
+          <input type="radio" name="concert-options" value="notyear">
+          Not this year
+        </label>
+      </div>
+      <div class="survey-group">
+        <p>6. What’s your favorite place to watch live music?</p>
+        <label>
+          <input type="checkbox" name="live-concert" value="club">
+          Club
+        </label>
+        <label >
+          <input type="checkbox" name="live-concert" value="lounge">
+          Lounge
+        </label>
+        <label >
+          <input type="checkbox" name="live-concert" value="Mfest">
+          Music Festival
+        </label>
+        <label >
+          <input type="checkbox" name="live-concert" value="theatre">
+          Theatre
+        </label>
+        <label >
+          <input type="checkbox" name="live-concert" value="concert">
+          Concert
+        </label>
+      </div>
+      <div class="survey-group">
+        <p>7. Do you have more comments about live music in our area?</p>
+        <textarea name="comments" placeholder="Enter your comments here..."></textarea>
+      </div>
+      <div class="survey-group">
+        <button id="submit" type="submit" class="button">Submit !</button>
+      </div>
+    </form>
+  </body>
+</div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
